@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* RULES */
+.big-container {
+    width: 100%;
+    /* height: 700px; */
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    /* height: 100vw; */
+}
+
+.menu-side,
+.playlist {
+    padding-top: 20px;
+}
+
+.big-content {
+    width: calc(100% - 200px);
+
+}
+
+.top-bar {
+    width: 100%;
+    /* height: 10%; */
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.nav-bar {
+    width: 100%;
+
+}
+
+.col-bar {
+    padding: 20px;
+}
+
+.menu-icon {
+    width: 10%;
+}
+
+.plus-icon {
+    font-size: 30px;
+}
+
+
+
+.row-100 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.col-6 {
+    width: calc(100% / 6);
+    height: 200px;
+    background-color: aqua;
+    margin: 10px;
+}
+
+.col-3 {
+    width: calc(100% / 3);
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Elementi footer */
+.pos-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.sinister {
+    width: 50px;
+    max-height: 100px;
+}
+
+
+/* COLORs */
+.back-yellow {
+    background-color: yellow;
+}
+
+.back-red {
+    background-color: red;
+}
+
+.back-green {
+    background-color: green;
+}
+
+.back-orange {
+    background-color: orange;
+}
+
+.back-black {
+    background-color: black;
+}
+
+
+
+/* TABLET */
+@media screen and (max-width:900px) {
+
+    .col-6 {
+        width: calc(100% / 4 - 20px);
+        height: 200px;
+        background-color: aqua;
+        margin: 10px;
+    }
+
+    .row-100 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/* TABLET PIù PICCOLO */
+@media screen and (max-width: 600px) {
+    .col-6 {
+        width: calc(100% / 2 - 20px);
+        height: 200px;
+        background-color: aqua;
+        margin: 10px;
+    }
+
+    .row-100 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .nav-bar {
+        flex-wrap: wrap;
+    }
+    /* .col-bar {
+        width: calc(100vw / 4);
+    } */
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        width: 50px;
+    }
+
+    .playlist {
+        display: none;
+    }
+
+    .nome {
+        display: none;
+    }
+
+
+    .menu-icon {
+        width: 30%;
+
+    }
+
+    .menu-side {
+        padding-top: 0;
+    }
+
+    .big-content {
+        width: calc(100% - 50px);
+    }
+
+    .col-6 {
+        width: calc(100% / 2 - 20px);
+        height: 200px;
+        background-color: aqua;
+        margin: 10px;
+    }
+
+    .row-100 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* .col-bar {
+        width: calc(100vw / 4);
+        padding: 0;
+    } */
+}
